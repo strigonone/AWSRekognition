@@ -1,2 +1,8 @@
 # Mission-2
-just the start
+Image Recognition tool
+
+Using Cloud Services AWS -> Image Rekognition Tool
+
+- Written in Python Language
+- Unit Testing implemented
+- Targeted at TurnersCars
