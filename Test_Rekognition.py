@@ -1,8 +1,19 @@
 import unittest
-from RekognitionURLImages import rekresp
-# from RekognitionLocalImages import rekresp
 
 class TestImages(unittest.TestCase):
-    def test_image(self):
 
-        self.assertAlmostEqual(rekresp("car"), "transport", "car")
+    def __init__(self, labelname, usercompare):
+        super().__init__()
+        self.labelname = labelname
+        self.usercompare = usercompare
+
+
+    def test_labelname(self):
+        try:
+            # print("Hitting unit test")
+            self.assertEqual(self.labelname, self.usercompare, 'Cannot find car label {}'.format(self.labelname))
+            print("We have a match with {}".format(self.labelname))
+        except self.failureException:
+            pass
+
+        # print("Unit Test is complete")
