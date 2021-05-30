@@ -6,7 +6,7 @@ import simplejson as json
 
 client = boto3.client('rekognition')
 
-imgurl = 'https://media.wired.com/photos/59371bdcbef1fc4e58f947fc/master/w_2560%2Cc_limit/walmart-advanced-vehicle-experience-wave-concept-truck.jpg'
+imgurl = 'http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2008/12/25090000/504img3.jpg'
 
 # grab the image from online
 imgbytes = Image_Reader.get_image_from_url(imgurl)

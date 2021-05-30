@@ -7,7 +7,7 @@ client = boto3.client('rekognition')
 
 imgfile = 'ImageTest/subaruwrc.jpg'
 
-# grab the image from online
+# Grabs the image locally
 imgbytes = Image_Reader.get_image_from_file(imgfile)
 
 rekresp = client.detect_labels(Image={'Bytes': imgbytes})
